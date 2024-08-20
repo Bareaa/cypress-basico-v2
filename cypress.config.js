@@ -4,6 +4,9 @@ module.exports = defineConfig({
   viewportWidth: 375,
   viewportHeight: 667,
   e2e: {
-    // Configurações específicas do ambiente de testes
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+    baseUrl: 'http://localhost:3000', // ou outro valor adequado
   },
 });
